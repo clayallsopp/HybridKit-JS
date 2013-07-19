@@ -61,6 +61,17 @@ test("runCommand works with nested parameters", function() {
     assertEqual("command:%7B%22command%22%3A%22alert%22%2C%22params%22%3A%22one%22%2C%22hello%22%3A%7B%22world%22%3A%22clay%22%7D%7D", mockWindow.location);
 });
 
+test("runCommand works with callback", function() {
+    // runCommand# works
+    HybridKit.runCommand("alert", {
+        params: "one",
+        callback: ["superDuper", {
+            "params": "two"
+        }]
+    });
+    assertEqual("command:%7B%22command%22%3A%22alert%22%2C%22params%22%3A%22one%22%2C%22callback_url%22%3A%22command%3A%257B%2522command%2522%253A%2522superDuper%2522%252C%2522params%2522%253A%2522two%2522%257D%22%7D", mockWindow.location);
+});
+
 test("registerCommands creates methods", function() {
     var commands = ["alert", "thing", "test2"];
     HybridKit.registerCommands(commands);
