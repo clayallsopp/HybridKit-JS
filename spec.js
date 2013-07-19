@@ -82,7 +82,7 @@ test("registerCommands creates methods", function() {
 });
 
 test("registerCommand triggers correctly", function() {
-    HybridKit.registerCommands(["foobar"]);
+    HybridKit.registerCommands(["foobar", "herp"]);
     HybridKit.foobar({
         params: "two"
     });

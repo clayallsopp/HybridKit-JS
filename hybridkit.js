@@ -27,11 +27,14 @@
         this.context.location = commandUrlForHash(commandHash);
       },
       registerCommands: function(commands) {
-        for (var i = 0; i < commands.length; i++) {
-          var command = commands[i];
-          this[command] = function(hash) {
+        var make_commandMethod = function(command) {
+          return function(hash) {
             model.runCommand(command, hash);
           }
+        }
+        for (var i = 0; i < commands.length; i++) {
+          var command = commands[i];
+          this[command] = make_commandMethod(command);
         }
       }
     }
