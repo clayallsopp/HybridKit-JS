@@ -4,7 +4,7 @@ HybridKit for JavaScript
 
 ## Installation
 
-Download [hybridkit.js](hybridkit.js) ([minified](hybridkit.min.js)) and add it to your page:
+Download [hybridkit.js](https://raw.github.com/usepropeller/HybridKit-JS/master/hybridkit.js) ([minified](https://raw.github.com/usepropeller/HybridKit-JS/master/hybridkit.min.js)) and add it to your page:
 
 ```html
 <script src="/assets/js/hybridkit.min.js"></script>
