@@ -1,6 +1,8 @@
-# HybridKit-JS
+# HybridKit for JavaScript
 
-HybridKit for JavaScript
+HybridKit is a simple, extensible messaging system for your web/native hybrid mobile apps. This is the JavaScript library you run on your web pages to communicate with your app.
+
+Use [HybridKit for iOS](https://github.com/usepropeller/hybridkit-ios) to enable it in your mobile apps.
 
 ## Installation
 
@@ -12,7 +14,7 @@ Download [hybridkit.js](https://raw.github.com/usepropeller/HybridKit-JS/master/
 
 ## Usage
 
-You can run arbitrary commands with `runCommand`:
+Run commands with `runCommand`:
 
 ```javascript
 HybridKit.runCommand("alert", {
