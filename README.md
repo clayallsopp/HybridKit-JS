@@ -34,6 +34,8 @@ HybridKit.alert({
 });
 ```
 
+HybridKit comes with several useful [built-in commands](https://github.com/usepropeller/HybridKit-JS/wiki/Built-In-Commands).
+
 ## Contact
 
 Clay Allsopp ([http://clayallsopp.com](http://clayallsopp.com))
